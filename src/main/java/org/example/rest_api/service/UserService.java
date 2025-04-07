@@ -14,7 +14,6 @@ public class UserService {
     private UserRepository userRepository;
 
     public User addUser(User user) {
-        // Валидация и добавление пользователя
         return userRepository.save(user);
     }
 
@@ -23,7 +22,6 @@ public class UserService {
     }
 
     public User updateUser(Long id, User user) {
-        // Обновление информации о пользователе
         user.setId(id);
         return userRepository.save(user);
     }

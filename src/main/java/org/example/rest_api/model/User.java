@@ -96,12 +96,10 @@ public class User {
     public void setGoal(String goal) {
         this.goal = goal;
     }
-// Геттеры и сеттеры
 
     @PrePersist
     @PreUpdate
     public void calculateDailyCaloricIntake() {
-        // Пример использования формулы Харриса-Бенедикта
         if (goal.equals("Похудение")) {
             dailyCaloricIntake = (10 * weight) + (6.25 * height) - (5 * age) - 161 - 500; // Уменьшение на 500 ккал
         } else if (goal.equals("Поддержание")) {

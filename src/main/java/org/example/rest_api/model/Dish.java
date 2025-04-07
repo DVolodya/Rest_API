@@ -62,5 +62,4 @@ public class Dish {
     public void setCarbohydrates(double carbohydrates) {
         this.carbohydrates = carbohydrates;
     }
-// Геттеры и сеттеры
 }

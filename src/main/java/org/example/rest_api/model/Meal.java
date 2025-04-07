@@ -5,7 +5,6 @@ import java.util.List;
 
 @Entity
 public class Meal {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -17,7 +16,39 @@ public class Meal {
     private List<Dish> dishes;
 
     private LocalDate date;
+    public User getUser() {
+        return user;
+    }
 
-    // Getters и Setters
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public List<Dish> getDishes() {
+        return dishes;
+    }
+
+    public void setDishes(List<Dish> dishes) {
+        this.dishes = dishes;
+    }
+
+    public LocalDate getDate() {
+        return date;
+    }
+
+    public void setDate(LocalDate date) {
+        this.date = date;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+
+
 }
 
