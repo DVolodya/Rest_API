@@ -1,4 +1,4 @@
-package org.example.rest_api.Eat;
+package org.example.rest_api.model;
 
 import  jakarta.persistence.*;
 
